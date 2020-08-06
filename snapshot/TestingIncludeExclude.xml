@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <groups>
+    
+    <define name="tests">
+    <include name="smoketest"/>
+    <include name="UATtest"/>
+    </define>
+ 
+    <run>
+    <exclude name = "smoketest"/>
+    <exclude name="UATtest"/>
+    </run>
+    </groups>
+    <classes>
+   <class name="learnTestNG.TestngIncludeExclude"/>
+    </classes>
+  </test> 
+  </suite> 
+  
